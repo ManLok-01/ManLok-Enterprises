@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ManLok Enterprises product catalogue - Furniture, storage solutions and crowd-control equipment.">
+
+    <title>Products | ManLok Enterprises</title>
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.floating-whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 13px 20px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-3px);
+    background: #1ebe5d;
+}
+
+@media (max-width: 600px) {
+
+    .floating-whatsapp {
+        right: 15px;
+        bottom: 15px;
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+
+}
+    <style>
+
+        /* ================= BASIC ================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            width: 100%;
+            min-width: 0;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color: #172033;
+
+            background: #ffffff;
+
+            line-height: 1.6;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .header {
+            width: 100%;
+
+            padding: 18px 6%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background: #ffffff;
+
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+
+        .logo img {
+            width: 150px;
+
+            height: auto;
+
+            display: block;
+        }
+
+
+        .navbar {
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+
+        .navbar a {
+            color: #172033;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: 600;
+        }
+
+
+        .navbar a:hover {
+            color: #b8860b;
+        }
+
+
+        /* ================= PAGE HERO ================= */
+
+        .products-hero {
+            width: 100%;
+
+            background: #111827;
+
+            color: #ffffff;
+
+            padding: 85px 7%;
+        }
+
+
+        .hero-inner {
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        .section-label {
+            color: #c49a3a;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .products-hero h1 {
+            font-size: 52px;
+
+            line-height: 1.1;
+
+            margin-bottom: 15px;
+        }
+
+
+        .products-hero p:last-child {
+            color: #cbd1dc;
+
+            font-size: 18px;
+
+            max-width: 650px;
+        }
+
+
+        /* ================= CATALOGUE ================= */
+
+        .catalogue {
+            width: 100%;
+
+            padding: 80px 6%;
+        }
+
+
+        .intro {
+            width: 100%;
+
+            max-width: 800px;
+
+            margin: 0 auto 70px;
+
+            text-align: center;
+        }
+
+
+        .intro h2 {
+            font-size: 40px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .intro p:last-child {
+            color: #687386;
+
+            font-size: 17px;
+        }
+
+
+        /* ================= CATEGORY ================= */
+
+        .category {
+            width: 100%;
+
+            max-width: 1250px;
+
+            margin: 0 auto 80px;
+        }
+
+
+        .category-heading {
+            margin-bottom: 30px;
+
+            border-left: 5px solid #c49a3a;
+
+            padding-left: 15px;
+        }
+
+
+        .category-heading h2 {
+            font-size: 30px;
+        }
+
+
+        /* ================= PRODUCT GRID ================= */
+
+        .product-grid {
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 30px;
+        }
+
+
+        /* ================= PRODUCT CARD ================= */
+
+        .product-card {
+            width: 100%;
+
+            min-width: 0;
+
+            background: #ffffff;
+
+            border: 1px solid #e3e6eb;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.06);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .product-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* ================= PRODUCT IMAGE ================= */
+
+        .product-image {
+            width: 100%;
+
+            height: 280px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #f7f8fa;
+
+            padding: 20px;
+        }
+
+
+        .product-image img {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* ================= PRODUCT INFO ================= */
+
+        .product-info {
+            padding: 25px;
+        }
+
+
+        .product-category {
+            display: block;
+
+            color: #a47717;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .product-info h3 {
+            font-size: 22px;
+
+            margin-bottom: 10px;
+
+            color: #172033;
+        }
+
+
+        .product-info p {
+            color: #687386;
+
+            font-size: 15px;
+
+            margin-bottom: 22px;
+
+            min-height: 65px;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .product-enquiry {
+            display: block;
+
+            width: 100%;
+
+            padding: 12px;
+
+            text-align: center;
+
+            background: #168c4a;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+        }
+
+
+        .product-enquiry:hover {
+            background: #116b39;
+        }
+
+
+        /* ================= FINAL CTA ================= */
+
+        .catalogue-contact {
+            width: 100%;
+
+            text-align: center;
+
+            background: #f7f8fa;
+
+            padding: 80px 20px;
+        }
+
+
+        .catalogue-contact h2 {
+            font-size: 36px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .catalogue-contact p {
+            color: #687386;
+
+            margin-bottom: 25px;
+        }
+
+
+        .whatsapp-button {
+            display: inline-block;
+
+            background: #168c4a;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            padding: 14px 28px;
+
+            border-radius: 5px;
+
+            font-weight: 700;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            width: 100%;
+
+            background: #0b0f18;
+
+            color: #ffffff;
+
+            padding: 40px 6%;
+        }
+
+
+        .footer-inner {
+            width: 100%;
+
+            max-width: 1250px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 40px;
+        }
+
+
+        footer p {
+            color: #9ba3b2;
+
+            font-size: 14px;
+
+            margin-top: 5px;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 950px) {
+
+            .product-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+            .navbar {
+                gap: 15px;
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 650px) {
+
+            .header {
+                flex-direction: column;
+
+                gap: 18px;
+
+                padding: 18px 5%;
+            }
+
+
+            .navbar {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px 18px;
+            }
+
+
+            .products-hero {
+                padding: 65px 6%;
+            }
+
+
+            .products-hero h1 {
+                font-size: 40px;
+            }
+
+
+            .catalogue {
+                padding: 60px 5%;
+            }
+
+
+            .intro h2 {
+                font-size: 32px;
+            }
+
+
+            .product-grid {
+                grid-template-columns: 1fr;
+
+                gap: 25px;
+            }
+
+
+            .product-image {
+                height: 270px;
+            }
+
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+        }
+/* PRODUCT CATEGORY NAVIGATION */
+
+.category-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.category-navigation a {
+    padding: 12px 22px;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.category-navigation a:hover {
+    background: #c49a3a;
+}
+
+.category {
+    scroll-margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+    .category-navigation a {
+        width: 100%;
+        text-align: center;
+    }
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <img
+            src="images/logo.png"
+            alt="ManLok Enterprises Logo">
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="index.html#why-us">
+            Why Us
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="products-hero">
+
+    <div class="hero-inner">
+
+        <p class="section-label">
+            MANLOK ENTERPRISES
+        </p>
+
+        <h1>
+            Our Products
+        </h1>
+
+        <p>
+            Explore our range of furniture, storage solutions,
+            crowd-control equipment and other products.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CATALOGUE ================= -->
+
+<main class="catalogue">
+<div class="category-navigation">
+    <a href="#furniture">Furniture</a>
+    <a href="#storage">Storage Solutions</a>
+    <a href="#crowd-control">Crowd-Control Equipment</a>
+   <a href="#electronics">Electronics Products</a>
+</div>
+
+    <div class="intro">
+
+        <p class="section-label">
+            PRODUCT CATALOGUE
+        </p>
+
+        <h2>
+            Explore Our Range
+        </h2>
+
+        <p>
+            Contact us for product availability,
+            pricing and quotations.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= FURNITURE ================= -->
+
+    <section class="category" id="furniture">
+
+        <div class="category-heading">
+
+            <h2>
+                Furniture
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- Wooden Chair -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/wooden-chair.jpg"
+                        alt="Wooden Chairs">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        FURNITURE
+                    </span>
+
+                    <h3>
+                        Wooden Chairs
+                    </h3>
+
+                    <p>
+                        Durable seating solutions suitable
+                        for offices, institutions and
+                        various establishments.
+                    </p>
+
+                    <a
+                        class="product-enquiry"
+                        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Wooden%20Chairs.%20Please%20share%20the%20price%20and%20details."
+                        target="_blank">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Plastic Chair -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/plastic-chairs.png"
+                        alt="Plastic Chairs">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        FURNITURE
+                    </span>
+
+                    <h3>
+                        Plastic Chairs
+                    </h3>
+
+                    <p>
+                        Practical seating solutions for
+                        different customer requirements.
+                    </p>
+
+                    <a
+                        class="product-enquiry"
+                        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Plastic%20Chairs.%20Please%20share%20the%20price%20and%20details."
+                        target="_blank">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Office Table -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/office-table.jpg"
+                        alt="Office Tables">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        OFFICE FURNITURE
+                    </span>
+
+                    <h3>
+                        Office Tables
+                    </h3>
+
+                    <p>
+                        Office and institutional furniture
+                        solutions suitable for professional
+                        environments.
+                    </p>
+
+                    <a
+                        class="product-enquiry"
+                        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Office%20Tables.%20Please%20share%20the%20price%20and%20details."
+                        target="_blank">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STORAGE ================= -->
+
+<section class="category" id="storage">
+
+        <div class="category-heading">
+
+            <h2>
+                Storage Solutions
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+          
+
+
+            <!-- 4 Shelf -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/4-Shelf-iron-rack.png"
+                        alt="4 Shelf Iron Rack">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        STORAGE
+                    </span>
+
+                    <h3>
+                        4-Shelf Iron Rack
+                    </h3>
+
+                    <p>
+                        Strong storage solution for offices,
+                        shops, warehouses and institutions.
+                    </p>
+
+                    <a
+                        class="product-enquiry"
+                        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20the%204-Shelf%20Iron%20Rack.%20Please%20share%20the%20price%20and%20details."
+                        target="_blank">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CROWD CONTROL ================= -->
+
+   <section class="category" id="crowd-control">
+
+        <div class="category-heading">
+
+            <h2>
+                Crowd-Control Equipment
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- Barricade -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/iron-barricade.png"
+                        alt="Iron Barricades">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        CROWD CONTROL
+                    </span>
+
+                    <h3>
+                        Iron Barricades
+                    </h3>
+
+                    <p>
+                        Metal barricades for crowd-control,
+                        security and institutional requirements.
+                    </p>
+
+                    <a
+                        class="product-enquiry"
+                        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Iron%20Barricades.%20Please%20share%20the%20price%20and%20details."
+                        target="_blank">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+<!-- ================= ELECTRONICS PRODUCTS ================= -->
+<section class="category" id="electronics">
+
+    <div class="category-heading">
+        <h2>Electronics Products</h2>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- Interactive Displays -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/interactive-display.jpg"
+                     alt="Interactive Display">
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Electronics</span>
+
+                <h3>Interactive Displays</h3>
+
+                <p>
+                    Interactive display solutions for schools,
+                    institutions, offices and other requirements.
+                </p>
+
+                <a class="product-enquiry"
+                   href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Interactive%20Displays.%20Please%20share%20details%20and%20quotation."
+                   target="_blank">
+                    Enquire on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Air Coolers -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/air-cooler.avif"
+                     alt="Air Cooler">
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Electronics</span>
+
+                <h3>Air Coolers</h3>
+
+                <p>
+                    Air cooling solutions suitable for homes,
+                    offices, institutions and other requirements.
+                </p>
+
+                <a class="product-enquiry"
+                   href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Air%20Coolers.%20Please%20share%20details%20and%20quotation."
+                   target="_blank">
+                    Enquire on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Other Electronic Products -->
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/other-electronic.jpg"
+                     alt="Other Electronic Products">
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">Electronics</span>
+
+                <h3>Other Electronic Products</h3>
+
+                <p>
+                    A range of electronic products sourced according
+                    to customer, office and institutional requirements.
+                </p>
+
+                <a class="product-enquiry"
+                   href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20am%20interested%20in%20Other%20Electronic%20Products.%20Please%20share%20details%20and%20quotation."
+                   target="_blank">
+                    Enquire on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</main>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="catalogue-contact">
+
+    <h2>
+        Looking for something specific?
+    </h2>
+
+    <p>
+        Contact ManLok Enterprises for product
+        availability and quotations.
+    </p>
+
+    <a
+        class="whatsapp-button"
+        href="https://wa.me/917015824251?text=Hello%20ManLok%20Enterprises,%20I%20would%20like%20to%20make%20a%20product%20enquiry."
+        target="_blank">
+
+        💬 Enquire on WhatsApp
+
+    </a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+
+            <h3>
+                MANLOK ENTERPRISES
+            </h3>
+
+            <p>
+                Quality Products • Reliable Supply
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Main Road, Dhani Phogat,
+                Charkhi Dadri – 127306, Haryana
+            </p>
+
+            <p>
+                +91 70158 24251
+            </p>
+
+            <p>
+                manlok.enterprises.16@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
