@@ -1505,44 +1505,67 @@ footer {
 }
 }
 /* =========================================================
-   LARGER MANLOK ENTERPRISES + TAGLINE
+   FORCE LARGE MANLOK BRAND TEXT
    ========================================================= */
 
+.premium-name {
+    min-width: 500px !important;
+    width: auto !important;
+    overflow: visible !important;
+}
+
 .premium-main-name {
+    display: block !important;
+    width: max-content !important;
     font-size: 90px !important;
+    line-height: 0.95 !important;
     letter-spacing: 3px !important;
 }
 
 .premium-sub-name {
+    display: block !important;
+    width: max-content !important;
     font-size: 34px !important;
+    line-height: 1 !important;
     letter-spacing: 10px !important;
     margin-top: 10px !important;
 }
 
 .premium-tagline {
+    display: block !important;
+    width: max-content !important;
     font-size: 16px !important;
+    line-height: 1.2 !important;
     letter-spacing: 3.5px !important;
     margin-top: 15px !important;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
+
+    .premium-name {
+        min-width: 0 !important;
+        width: auto !important;
+    }
 
     .premium-main-name {
         font-size: 37px !important;
-        letter-spacing: 1.5px !important;
+        width: auto !important;
     }
 
     .premium-sub-name {
         font-size: 14px !important;
+        width: auto !important;
         letter-spacing: 4px !important;
-        margin-top: 6px !important;
     }
 
     .premium-tagline {
         font-size: 7px !important;
+        width: auto !important;
         letter-spacing: 1.4px !important;
-        margin-top: 8px !important;
     }
 }
