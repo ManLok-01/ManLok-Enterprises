@@ -3113,3 +3113,304 @@ footer {
         max-height: 300px;
     }
 }
+/* =========================================================
+   PREMIUM WHY US SECTION
+   ========================================================= */
+
+.why-us-section {
+    position: relative;
+
+    padding: 85px 6%;
+
+    background: #f7f7f5;
+
+    overflow: hidden;
+}
+
+
+/* Decorative gold glow */
+
+.why-us-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    bottom: -250px;
+    left: -180px;
+
+    background: radial-gradient(
+        circle,
+        rgba(212, 175, 55, 0.12),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Section heading */
+
+.why-us-section h2 {
+    position: relative;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+}
+
+
+/* Gold heading line */
+
+.why-us-section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    margin: 16px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        #a87918,
+        #d4af37,
+        #f5d76e
+    );
+
+    border-radius: 3px;
+}
+
+
+/* Section description */
+
+.why-us-section > p {
+    max-width: 700px;
+
+    margin: 20px auto 45px;
+
+    text-align: center;
+
+    color: #666666;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WHY US GRID
+   ========================================================= */
+
+.why-us-section .why-us-grid {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Why Us card */
+
+.why-us-section .why-us-card {
+    position: relative;
+
+    padding: 32px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e3e3;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Gold top accent */
+
+.why-us-section .why-us-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 0;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #a87918,
+        #f5d76e
+    );
+
+    transform: translateX(-50%);
+
+    transition: width 0.35s ease;
+}
+
+
+/* Hover */
+
+.why-us-section .why-us-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.why-us-section .why-us-card:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.why-us-section .why-us-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #faf6e8;
+
+    border: 1px solid #d4af37;
+
+    color: #b8861b;
+
+    font-size: 24px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.why-us-section .why-us-card:hover .why-us-icon {
+    transform: scale(1.08);
+
+    background: #d4af37;
+
+    color: #111111;
+}
+
+
+/* Card heading */
+
+.why-us-section .why-us-card h3 {
+    margin: 0 0 10px;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* Card text */
+
+.why-us-section .why-us-card p {
+    margin: 0;
+
+    color: #666666;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .why-us-section {
+        padding: 70px 25px;
+    }
+
+    .why-us-section .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .why-us-section {
+        padding: 55px 18px;
+    }
+
+    .why-us-section h2 {
+        font-size: 32px;
+    }
+
+    .why-us-section > p {
+        font-size: 15px;
+
+        margin-bottom: 35px;
+    }
+
+    .why-us-section .why-us-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .why-us-section .why-us-card {
+        padding: 28px 20px;
+    }
+}
