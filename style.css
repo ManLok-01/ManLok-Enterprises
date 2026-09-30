@@ -2836,3 +2836,280 @@ footer {
         font-size: 21px;
     }
 }
+/* =========================================================
+   PREMIUM ABOUT SECTION
+   ========================================================= */
+
+.about-section {
+    position: relative;
+
+    padding: 85px 6%;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* Subtle gold background decoration */
+
+.about-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    top: -220px;
+    right: -160px;
+
+    background: radial-gradient(
+        circle,
+        rgba(212, 175, 55, 0.12),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* About container */
+
+.about-section .about-container {
+    position: relative;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* About heading */
+
+.about-section h2 {
+    position: relative;
+
+    margin: 0 0 20px;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+}
+
+
+/* Gold heading underline */
+
+.about-section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    margin-top: 14px;
+
+    background: linear-gradient(
+        90deg,
+        #a87918,
+        #d4af37,
+        #f5d76e
+    );
+
+    border-radius: 3px;
+}
+
+
+/* About paragraph */
+
+.about-section p {
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* Strong text */
+
+.about-section strong {
+    color: #222222;
+}
+
+
+/* About image */
+
+.about-section img {
+    width: 100%;
+
+    max-height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 1px solid #e1e1e1;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.about-section img:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   ABOUT HIGHLIGHT BOX
+   ========================================================= */
+
+.about-section .about-highlight {
+    margin-top: 28px;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid #d4af37;
+
+    background: #faf8f0;
+
+    border-radius: 0 7px 7px 0;
+}
+
+.about-section .about-highlight p {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ABOUT FEATURES
+   ========================================================= */
+
+.about-section .about-features {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.about-section .about-feature {
+    padding: 16px;
+
+    background: #f8f8f6;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-section .about-feature:hover {
+    transform: translateY(-4px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.08);
+}
+
+.about-section .about-feature h3 {
+    margin: 0 0 6px;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+}
+
+.about-section .about-feature p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ABOUT MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .about-section {
+        padding: 65px 20px;
+    }
+
+    .about-section .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-section h2 {
+        font-size: 34px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 55px 18px;
+    }
+
+    .about-section h2 {
+        font-size: 32px;
+    }
+
+    .about-section .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section img {
+        max-height: 300px;
+    }
+}
