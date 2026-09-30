@@ -1423,50 +1423,84 @@ footer {
         font-size: 12px;
     }
 }
-/* FINAL PREMIUM LOGO SIZE OVERRIDE */
+/* =========================================================
+   FINAL PREMIUM HEADER SIZE
+   ========================================================= */
 
 .premium-header {
-    min-height: 160px !important;
+    min-height: 180px !important;
+    padding: 20px 4% !important;
+}
+
+.premium-brand {
+    flex-shrink: 0 !important;
+}
+
+.premium-logo {
+    width: 240px !important;
+    flex-shrink: 0 !important;
 }
 
 .premium-logo img {
-    width: 220px !important;
+    width: 240px !important;
     height: auto !important;
     max-width: none !important;
+    display: block !important;
 }
 
 .premium-divider {
-    height: 135px !important;
+    height: 145px !important;
+    margin: 0 25px !important;
 }
 
 .premium-main-name {
-    font-size: 52px !important;
+    font-size: 56px !important;
 }
 
 .premium-sub-name {
-    font-size: 20px !important;
+    font-size: 21px !important;
 }
 
-/* Mobile */
+.premium-tagline {
+    font-size: 9px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
 
     .premium-header {
-        min-height: 125px !important;
+        min-height: 135px !important;
+        padding: 14px 12px !important;
+    }
+
+    .premium-logo {
+        width: 120px !important;
     }
 
     .premium-logo img {
-        width: 115px !important;
+        width: 120px !important;
+        max-width: none !important;
     }
 
     .premium-divider {
-        height: 90px !important;
+        height: 95px !important;
+        margin: 0 12px !important;
     }
 
     .premium-main-name {
-        font-size: 29px !important;
+        font-size: 31px !important;
     }
 
     .premium-sub-name {
-        font-size: 11px !important;
+        font-size: 12px !important;
     }
+
+    .premium-tagline {
+        font-size: 5.5px !important;
+    }
+}
 }
