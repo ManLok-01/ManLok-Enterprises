@@ -2461,3 +2461,7 @@ footer {
         font-size: 13px;
     }
 }
+.hero-content::before {
+    content: none !important;
+    display: none !important;
+}
