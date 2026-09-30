@@ -1652,3 +1652,183 @@ footer {
         height: 2px !important;
     }
 }
+/* =========================================================
+   PREMIUM GET A QUOTE BUTTON — FINAL
+   ========================================================= */
+
+.premium-quote-button {
+    position: relative;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+
+    min-width: 155px !important;
+
+    padding: 14px 24px !important;
+
+    background: linear-gradient(
+        135deg,
+        #b8861b 0%,
+        #d4af37 35%,
+        #f5d76e 65%,
+        #d4af37 100%
+    ) !important;
+
+    color: #111111 !important;
+    text-decoration: none !important;
+
+    border: 1px solid rgba(255, 239, 170, 0.7) !important;
+    border-radius: 8px !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+
+    white-space: nowrap !important;
+
+    box-shadow:
+        0 4px 12px rgba(212, 175, 55, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+
+    overflow: hidden !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease !important;
+}
+
+
+/* =========================================================
+   SHINE ANIMATION
+   ========================================================= */
+
+.premium-quote-button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+
+    pointer-events: none;
+}
+
+.premium-quote-button:hover::before {
+    left: 140%;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+   ========================================================= */
+
+.premium-quote-button:hover {
+    transform: translateY(-3px) !important;
+
+    color: #000000 !important;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37 0%,
+        #f8e28a 50%,
+        #d4af37 100%
+    ) !important;
+
+    box-shadow:
+        0 7px 22px rgba(212, 175, 55, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+
+/* =========================================================
+   WHATSAPP ICON
+   ========================================================= */
+
+.premium-quote-button .whatsapp-symbol {
+    width: 26px !important;
+    height: 26px !important;
+
+    flex-shrink: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 50% !important;
+
+    background: #25d366 !important;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.2) !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.premium-quote-button:hover .whatsapp-symbol {
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 3px 9px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/* Actual WhatsApp SVG */
+
+.premium-quote-button .whatsapp-symbol svg {
+    width: 18px !important;
+    height: 18px !important;
+
+    fill: #ffffff !important;
+
+    display: block !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .premium-quote-button {
+        min-width: 135px !important;
+
+        padding: 11px 18px !important;
+
+        font-size: 12px !important;
+
+        gap: 8px !important;
+
+        border-radius: 7px !important;
+    }
+
+    .premium-quote-button .whatsapp-symbol {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .premium-quote-button .whatsapp-symbol svg {
+        width: 15px !important;
+        height: 15px !important;
+    }
+}
