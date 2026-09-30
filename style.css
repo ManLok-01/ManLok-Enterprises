@@ -1274,10 +1274,10 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-
     height: 3px;
     background: #d4af37;
 }
+
 
 /* =========================================================
    GET A QUOTE BUTTON
@@ -1325,7 +1325,10 @@ footer {
     color: #000000;
 }
 
-/* WhatsApp symbol */
+
+/* =========================================================
+   WHATSAPP SYMBOL
+   ========================================================= */
 
 .whatsapp-symbol {
     width: 22px;
@@ -1343,8 +1346,80 @@ footer {
     font-size: 10px;
 }
 
+
 /* =========================================================
-   MOBILE HEADER
+   LARGE BRAND TYPOGRAPHY
+   ========================================================= */
+
+.premium-name {
+    min-width: 500px;
+    width: auto;
+    overflow: visible;
+}
+
+.premium-main-name {
+    display: block;
+    width: max-content;
+
+    font-size: 90px;
+    line-height: 0.95;
+    letter-spacing: 3px;
+}
+
+.premium-sub-name {
+    display: block;
+    width: max-content;
+
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 10px;
+    margin-top: 10px;
+}
+
+.premium-tagline {
+    display: block;
+    width: max-content;
+
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 3.5px;
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   DESKTOP HEADER SIZE
+   ========================================================= */
+
+.premium-header {
+    min-height: 180px;
+    padding: 20px 4%;
+}
+
+.premium-brand {
+    flex-shrink: 0;
+}
+
+.premium-logo {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.premium-logo img {
+    width: 240px;
+    height: auto;
+    max-width: none;
+    display: block;
+}
+
+.premium-divider {
+    height: 145px;
+    margin: 0 25px;
+}
+
+
+/* =========================================================
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -1373,40 +1448,54 @@ footer {
 
 
 /* =========================================================
-   SMALL MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
 
     .premium-header {
+        min-height: 135px;
         padding: 14px 12px;
         gap: 14px;
     }
 
+    .premium-logo {
+        width: 120px;
+    }
+
     .premium-logo img {
-        width: 115px;
+        width: 120px;
+        max-width: none;
     }
 
     .premium-divider {
-        height: 90px;
-        margin: 0 11px;
+        height: 95px;
+        margin: 0 12px;
+    }
+
+    .premium-name {
+        min-width: 0;
+        width: auto;
     }
 
     .premium-main-name {
-        font-size: 29px;
-        letter-spacing: 1px;
+        font-size: 37px;
+        width: auto;
+        letter-spacing: 1.5px;
     }
 
     .premium-sub-name {
-        font-size: 11px;
+        font-size: 14px;
+        width: auto;
         letter-spacing: 4px;
-        margin-top: 5px;
+        margin-top: 6px;
     }
 
     .premium-tagline {
-        font-size: 5.5px;
-        letter-spacing: 1.2px;
-        margin-top: 7px;
+        font-size: 7px;
+        width: auto;
+        letter-spacing: 1.4px;
+        margin-top: 8px;
     }
 
     .premium-navbar {
@@ -1421,151 +1510,5 @@ footer {
     .premium-quote-button {
         padding: 10px 17px;
         font-size: 12px;
-    }
-}
-/* =========================================================
-   FINAL PREMIUM HEADER SIZE
-   ========================================================= */
-
-.premium-header {
-    min-height: 180px !important;
-    padding: 20px 4% !important;
-}
-
-.premium-brand {
-    flex-shrink: 0 !important;
-}
-
-.premium-logo {
-    width: 240px !important;
-    flex-shrink: 0 !important;
-}
-
-.premium-logo img {
-    width: 240px !important;
-    height: auto !important;
-    max-width: none !important;
-    display: block !important;
-}
-
-.premium-divider {
-    height: 145px !important;
-    margin: 0 25px !important;
-}
-
-.premium-main-name {
-    font-size: 56px !important;
-}
-
-.premium-sub-name {
-    font-size: 21px !important;
-}
-
-.premium-tagline {
-    font-size: 9px !important;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .premium-header {
-        min-height: 135px !important;
-        padding: 14px 12px !important;
-    }
-
-    .premium-logo {
-        width: 120px !important;
-    }
-
-    .premium-logo img {
-        width: 120px !important;
-        max-width: none !important;
-    }
-
-    .premium-divider {
-        height: 95px !important;
-        margin: 0 12px !important;
-    }
-
-    .premium-main-name {
-        font-size: 31px !important;
-    }
-
-    .premium-sub-name {
-        font-size: 12px !important;
-    }
-
-    .premium-tagline {
-        font-size: 5.5px !important;
-    }
-}
-}
-/* =========================================================
-   FORCE LARGE MANLOK BRAND TEXT
-   ========================================================= */
-
-.premium-name {
-    min-width: 500px !important;
-    width: auto !important;
-    overflow: visible !important;
-}
-
-.premium-main-name {
-    display: block !important;
-    width: max-content !important;
-    font-size: 90px !important;
-    line-height: 0.95 !important;
-    letter-spacing: 3px !important;
-}
-
-.premium-sub-name {
-    display: block !important;
-    width: max-content !important;
-    font-size: 34px !important;
-    line-height: 1 !important;
-    letter-spacing: 10px !important;
-    margin-top: 10px !important;
-}
-
-.premium-tagline {
-    display: block !important;
-    width: max-content !important;
-    font-size: 16px !important;
-    line-height: 1.2 !important;
-    letter-spacing: 3.5px !important;
-    margin-top: 15px !important;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .premium-name {
-        min-width: 0 !important;
-        width: auto !important;
-    }
-
-    .premium-main-name {
-        font-size: 37px !important;
-        width: auto !important;
-    }
-
-    .premium-sub-name {
-        font-size: 14px !important;
-        width: auto !important;
-        letter-spacing: 4px !important;
-    }
-
-    .premium-tagline {
-        font-size: 7px !important;
-        width: auto !important;
-        letter-spacing: 1.4px !important;
     }
 }
