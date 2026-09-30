@@ -1504,3 +1504,45 @@ footer {
     }
 }
 }
+/* =========================================================
+   LARGER MANLOK ENTERPRISES + TAGLINE
+   ========================================================= */
+
+.premium-main-name {
+    font-size: 64px !important;
+    letter-spacing: 3px !important;
+}
+
+.premium-sub-name {
+    font-size: 24px !important;
+    letter-spacing: 9px !important;
+    margin-top: 9px !important;
+}
+
+.premium-tagline {
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
+    margin-top: 13px !important;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .premium-main-name {
+        font-size: 34px !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    .premium-sub-name {
+        font-size: 13px !important;
+        letter-spacing: 4px !important;
+        margin-top: 6px !important;
+    }
+
+    .premium-tagline {
+        font-size: 6.5px !important;
+        letter-spacing: 1.3px !important;
+        margin-top: 8px !important;
+    }
+}
