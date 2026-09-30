@@ -1546,3 +1546,17 @@ footer {
         margin-top: 8px !important;
     }
 }
+.premium-main-name {
+    color: red !important;
+    font-size: 100px !important;
+}
+
+.premium-sub-name {
+    color: lime !important;
+    font-size: 40px !important;
+}
+
+.premium-tagline {
+    color: blue !important;
+    font-size: 25px !important;
+}
