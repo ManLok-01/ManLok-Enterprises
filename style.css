@@ -1423,3 +1423,50 @@ footer {
         font-size: 12px;
     }
 }
+/* FINAL PREMIUM LOGO SIZE OVERRIDE */
+
+.premium-header {
+    min-height: 160px !important;
+}
+
+.premium-logo img {
+    width: 220px !important;
+    height: auto !important;
+    max-width: none !important;
+}
+
+.premium-divider {
+    height: 135px !important;
+}
+
+.premium-main-name {
+    font-size: 52px !important;
+}
+
+.premium-sub-name {
+    font-size: 20px !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .premium-header {
+        min-height: 125px !important;
+    }
+
+    .premium-logo img {
+        width: 115px !important;
+    }
+
+    .premium-divider {
+        height: 90px !important;
+    }
+
+    .premium-main-name {
+        font-size: 29px !important;
+    }
+
+    .premium-sub-name {
+        font-size: 11px !important;
+    }
+}
