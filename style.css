@@ -444,16 +444,7 @@ body {
     margin-bottom: 25px;
 }
 
-.contact-details p {
-    margin-bottom: 12px;
-    font-size: 16px;
-}
-
-.contact-details a {
-    color: #172033;
-    text-decoration: none;
-    font-weight: 600;
-}
+...
 
 .contact-details a:hover {
     color: #b8860b;
