@@ -1151,3 +1151,284 @@ footer {
         margin-top: 6px;
     }
 }
+/* =========================================================
+   MANLOK ENTERPRISES - PREMIUM BLACK & GOLD HEADER
+   ========================================================= */
+
+.premium-header {
+    background: #050505;
+    min-height: 115px;
+    padding: 18px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 2px solid #d4af37;
+    box-sizing: border-box;
+}
+
+/* BRAND AREA */
+
+.premium-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.premium-logo img {
+    width: 125px;
+    height: auto;
+    display: block;
+}
+
+.premium-divider {
+    width: 1px;
+    height: 78px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #d4af37,
+        transparent
+    );
+    margin: 0 20px;
+}
+
+.premium-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main ManLok name */
+
+.premium-main-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    line-height: 0.95;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        120deg,
+        #a87918,
+        #f8e7a2,
+        #d4af37,
+        #fff0a8,
+        #a87918
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ENTERPRISES */
+
+.premium-sub-name {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+/* Tagline */
+
+.premium-tagline {
+    color: #d4af37;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.premium-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.premium-navbar a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: 0.3s ease;
+}
+
+.premium-navbar a:hover {
+    color: #d4af37;
+}
+
+.premium-navbar a.active {
+    color: #d4af37;
+}
+
+.premium-navbar a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+    background: #d4af37;
+}
+
+/* =========================================================
+   GET A QUOTE BUTTON
+   ========================================================= */
+
+.premium-quote-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f5d76e
+    );
+
+    color: #111111;
+    text-decoration: none;
+
+    padding: 13px 22px;
+    border-radius: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 4px 15px rgba(212, 175, 55, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.premium-quote-button:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #f5d76e,
+        #d4af37
+    );
+
+    color: #000000;
+}
+
+/* WhatsApp symbol */
+
+.whatsapp-symbol {
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background: #25d366;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .premium-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px 20px;
+    }
+
+    .premium-brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .premium-navbar {
+        margin-left: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .premium-quote-button {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .premium-header {
+        padding: 14px 12px;
+        gap: 14px;
+    }
+
+    .premium-logo img {
+        width: 78px;
+    }
+
+    .premium-divider {
+        height: 58px;
+        margin: 0 11px;
+    }
+
+    .premium-main-name {
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+
+    .premium-sub-name {
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-top: 5px;
+    }
+
+    .premium-tagline {
+        font-size: 5.5px;
+        letter-spacing: 1.2px;
+        margin-top: 7px;
+    }
+
+    .premium-navbar {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .premium-navbar a {
+        font-size: 12px;
+    }
+
+    .premium-quote-button {
+        padding: 10px 17px;
+        font-size: 12px;
+    }
+}
