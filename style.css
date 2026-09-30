@@ -3414,3 +3414,398 @@ footer {
         padding: 28px 20px;
     }
 }
+/* =========================================================
+   PREMIUM CONTACT SECTION
+   ========================================================= */
+
+.contact-section {
+    position: relative;
+
+    padding: 85px 6%;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* Decorative gold glow */
+
+.contact-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    top: -250px;
+    right: -180px;
+
+    background: radial-gradient(
+        circle,
+        rgba(212, 175, 55, 0.16),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Contact heading */
+
+.contact-section h2 {
+    position: relative;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+}
+
+
+/* Gold underline */
+
+.contact-section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    margin: 16px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        #a87918,
+        #d4af37,
+        #f5d76e
+    );
+
+    border-radius: 3px;
+}
+
+
+/* Contact introduction */
+
+.contact-section > p {
+    position: relative;
+
+    max-width: 700px;
+
+    margin: 20px auto 45px;
+
+    text-align: center;
+
+    color: #cccccc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT GRID
+   ========================================================= */
+
+.contact-section .contact-grid {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Contact card */
+
+.contact-section .contact-item {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 24px;
+
+    background: #191919;
+
+    border: 1px solid #333333;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover */
+
+.contact-section .contact-item:hover {
+    transform: translateY(-5px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   CONTACT ICON
+   ========================================================= */
+
+.contact-section .contact-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d4af37;
+
+    color: #111111;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* Contact title */
+
+.contact-section .contact-item h3 {
+    margin: 0 0 6px;
+
+    color: #d4af37;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+}
+
+
+/* Contact text */
+
+.contact-section .contact-item p {
+    margin: 0;
+
+    color: #dddddd;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* Links */
+
+.contact-section .contact-item a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.contact-section .contact-item a:hover {
+    color: #d4af37;
+}
+
+
+/* WhatsApp link */
+
+.contact-section .contact-item .contact-whatsapp {
+    color: #25d366;
+    font-weight: 600;
+}
+
+.contact-section .contact-item .contact-whatsapp:hover {
+    color: #6bea96;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+   ========================================================= */
+
+.contact-section .contact-cta {
+    position: relative;
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding: 28px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1b1b1b,
+            #252525
+        );
+
+    border: 1px solid #4a4a4a;
+
+    border-radius: 10px;
+}
+
+
+.contact-section .contact-cta h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+}
+
+
+.contact-section .contact-cta p {
+    margin: 0 0 20px;
+
+    color: #bbbbbb;
+
+    font-size: 14px;
+}
+
+
+/* CTA button */
+
+.contact-section .contact-cta .contact-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    background: #d4af37;
+
+    color: #111111;
+
+    border: 1px solid #f5d76e;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-section .contact-cta .contact-button:hover {
+    background: #f5d76e;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        padding: 70px 25px;
+    }
+
+    .contact-section .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 55px 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+    .contact-section > p {
+        font-size: 15px;
+
+        margin-bottom: 35px;
+    }
+
+    .contact-section .contact-item {
+        padding: 20px;
+
+        gap: 14px;
+    }
+
+    .contact-section .contact-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 17px;
+    }
+
+    .contact-section .contact-item h3 {
+        font-size: 17px;
+    }
+
+    .contact-section .contact-item p {
+        font-size: 13px;
+    }
+
+    .contact-section .contact-cta {
+        padding: 24px 18px;
+    }
+
+    .contact-section .contact-cta h3 {
+        font-size: 21px;
+    }
+}
