@@ -1167,14 +1167,14 @@ footer {
 }
 
 .premium-logo img {
-    width: 165px;
+    width: 195;
     height: auto;
     display: block;
 }
 
 .premium-divider {
-    width: 1px;
-    height: 105px;
+    width: 2px;
+    height: 135px;
     background: linear-gradient(
         to bottom,
         transparent,
@@ -1194,7 +1194,7 @@ footer {
 
 .premium-main-name {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 45px;
+    font-size: 52px;
     line-height: 0.95;
     font-weight: 600;
     letter-spacing: 2px;
@@ -1218,7 +1218,7 @@ footer {
 .premium-sub-name {
     font-family: Georgia, "Times New Roman", serif;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 8px;
     margin-top: 7px;
@@ -1384,11 +1384,11 @@ footer {
     }
 
     .premium-logo img {
-        width: 100px;
+        width: 115px;
     }
 
     .premium-divider {
-        height: 75px;
+        height: 90px;
         margin: 0 11px;
     }
 
